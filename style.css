@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#chatBox{
+    height: 550px;
+    width: 500px;
+    background-color: rgb(116, 116, 229);
+    padding: 10px;
+}
+
+#person{
+    height: 50px;
+    width: 100%;
+    /* background-color: rgb(90, 90, 232); */
+display: flex;
+justify-content: space-between;
+}
+
+#sarita,#dipa{
+    height: 50px;
+    width: 45%;
+    background-color: rgb(227, 162, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#who{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(190, 190, 74);
+    font-size: 25px;
+    text-align: center;
+    margin-block: 15px;
+}
+
+#container{
+    width: 100%;
+    height: 66% ;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.chat{
+    min-height: 60px;
+    width: 100%;
+    background-color: yellowgreen;
+    padding: 10px 20px;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.sending{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+justify-content: space-between;
+}
+
+input{
+    height: 50px;
+    width: 80%;
+    font-size: 20px;
+    padding-inline:10px;
+    outline: none;
+}
+
+#send{
+   height: 50px;
+   width: 18%;
+   font-size: 30px;
+}
