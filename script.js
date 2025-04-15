@@ -27,3 +27,25 @@ const inputValue=inputBox.value;
 console.log(inputValue);
 });
 
+const container=document.getElementById('container');
+const send=document.getElementById('send');
+
+send.addEventListener('click',()=>{
+const inputBox=document.getElementById('inputBox');
+    const chat=document.createElement('div');
+    chat.classList.add('chat');
+
+    const names=document.createElement('h1');
+    names.classList.add('sender');
+    names.innerText=`${currentSender || "unknown"}`;
+
+    const msg=document.createElement('p');
+    msg.innerText=inputBox.value;
+
+    chat.appendChild(names);
+    chat.appendChild(msg);
+    container.appendChild(chat);
+    msg.innerText=inputBox.value;
+    
+}
+)
